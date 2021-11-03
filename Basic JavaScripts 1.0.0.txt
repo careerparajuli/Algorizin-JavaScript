@@ -1,0 +1,131 @@
+
+//Q.No. 1)
+let nameUser = prompt("What is your name?");
+let ageUser = prompt("What is your age?");
+
+let object = {
+    name: nameUser,
+    age:  ageUser
+};
+
+console.log(object);
+
+
+//Q.No. 2
+let age = prompt ("When were you born?");
+let currentYear =new Date().getFullYear();
+let ageInYear = currentYear- age;
+
+console.log("You are " +ageInYear + " years old");
+
+
+//Q.No. 3
+
+for (let i=1; i<=10; i++ ){
+    let number= 2;
+      console.log(number + " X "+ i + " = "+number *i);
+}
+
+
+//Q.No. 4
+function isEven (number){
+    if(number%2===0){
+        return true;
+    }
+    else{
+        return false;
+    }
+} 
+isEven(-8);
+
+
+//Q.No. 5
+let array = [1,5,10,12,15,20,23];
+
+for (i = 0; i < array.length; i++){
+  
+if (array[i]%2!==0){
+    console.log(array[i]);
+}
+else{
+
+}
+}
+
+
+//Q.No. 6 Bubble Sort Algorith ----> Will try again later
+
+//Q.No. 7
+let resumeInformation = {
+    Name: 'Ujjwal Parajuli',
+    Age: 32,
+    Education: {
+        institute_name: 'University of Louisiana',
+        year:'2021',
+        degree:'Computer Science'
+    },
+    Experience: {
+        company:'Terumo BCT',
+        title: 'Assembler',
+        years_active: '2016-2017'
+    },
+    Address: {
+        Present_Address: '1117 E Pitkin St, Fort Collins, CO, 80524',
+        Permanent_Address: '03-Jorpati, Kathmandu, Nepal'
+    },
+    Skills: ['JAVA', 'CSS', 'JS']
+   
+   } ;
+
+   console.log("Hi, my name is " + resumeInformation.Name+ ". I am "
+   + resumeInformation.Age+ " years old. My present address is "
+   + resumeInformation.Address.Present_Address+". I took my "
+   +resumeInformation.Education.degree+ " degree from "
+   +resumeInformation.Education.institute_name+". I am currently working in "
+   + resumeInformation.Experience.company+ " as a "
+   +resumeInformation.Experience.title+ ".");
+
+
+////Q.No. 8
+
+for (let i =1; i<=5; i++){
+
+    console.log("*".repeat(i));
+}
+
+//Q.No. 9
+
+for (let i =5; i>=0; i--){
+
+    console.log("*".repeat(i));
+}
+
+
+//Q.No. 10
+//Creating functions.
+
+var weight = prompt("Hello human, what is your weight? (in Kg)");
+var height = prompt("What is your height? (in meter squared)");
+
+function bmiCalculator (weight, height){
+
+  var bmi = Math.round(weight /(height*height)); 
+  return bmi;
+}
+
+bmiCalculator(weight, height);
+
+
+//Q.No. 11
+
+function isPrimeNumber (n){
+    if(n<2) return false;
+
+    for (let i=2; i<n; i++){
+        if (n%i===0){
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isPrimeNumber(1))
